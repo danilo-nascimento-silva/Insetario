@@ -143,7 +143,7 @@ void loop(){
     float humidity = dht.readHumidity();
     ntp.update();
 
-    sendString("Data/Hora", ntp.getFormattedDate())
+    sendString("DataHora", ntp.getFormattedDate())
     sendFloat("Temperatura", temperature);
     sendFloat("Umidade", humidity);
   }
